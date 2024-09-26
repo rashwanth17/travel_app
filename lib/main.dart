@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:travel_app/Bot.dart';
 import 'package:travel_app/home.dart';
 import 'package:travel_app/open.dart';
 import 'package:google_nav_bar/google_nav_bar.dart';
@@ -32,6 +33,7 @@ class _MainScreenState extends State<MainScreen> {
   static const List<Widget> _pages = <Widget>[
     Opening(),
     HomePage(),
+    Bot(),
   ];
 
   void _onItemTapped(int index) {
@@ -92,6 +94,10 @@ class _MainScreenState extends State<MainScreen> {
                         GButton(
                           icon: Icons.explore,
                           text: 'EXPLORE',
+                        ),
+                        GButton(
+                          icon: Icons.settings,
+                          text: 'BOT',
                         ),
                       ],
                       selectedIndex: _selectedIndex,
