@@ -96,7 +96,7 @@ class _MainScreenState extends State<MainScreen> {
                           text: 'EXPLORE',
                         ),
                         GButton(
-                          icon: Icons.settings,
+                          icon: Icons.rocket_launch_rounded,
                           text: 'BOT',
                         ),
                       ],

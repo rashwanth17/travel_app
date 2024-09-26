@@ -242,6 +242,9 @@ class HomePage extends StatelessWidget {
                         ),
                       ],
                     ),
+                    SizedBox(
+                      height: 100,
+                    )
                   ],
                 ),
               ],
@@ -344,7 +347,7 @@ class HomePage extends StatelessWidget {
             ),
           ),
         ),
-        Positioned(child: Text("data"))
+        // Positioned(child: Text("data"))
       ],
     );
   }
