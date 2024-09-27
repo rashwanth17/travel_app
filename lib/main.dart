@@ -47,11 +47,9 @@ class _MainScreenState extends State<MainScreen> {
     return Scaffold(
       body: Stack(
         children: [
-          // Background image or content
           Positioned.fill(
             child: _pages[_selectedIndex],
           ),
-          // Bottom navigation bar with rounded corners
           Positioned(
             bottom: 0,
             left: 0,
@@ -74,9 +72,8 @@ class _MainScreenState extends State<MainScreen> {
                     padding: const EdgeInsets.symmetric(
                         horizontal: 15.0, vertical: 8),
                     child: GNav(
-                      mainAxisAlignment:
-                          MainAxisAlignment.center, // Center the icons
-                      gap: 2, // Reduce the gap between icons
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      gap: 2,
                       rippleColor: Colors.grey,
                       hoverColor: Colors.grey,
                       activeColor: Colors.black,
@@ -96,7 +93,7 @@ class _MainScreenState extends State<MainScreen> {
                           text: 'EXPLORE',
                         ),
                         GButton(
-                          icon: Icons.rocket_launch_rounded,
+                          icon: Icons.send_sharp,
                           text: 'BOT',
                         ),
                       ],

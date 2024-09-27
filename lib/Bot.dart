@@ -27,7 +27,7 @@ class _BotState extends State<Bot> {
       appBar: AppBar(
         backgroundColor: Colors.black,
         title: Text(
-          "AI CHATBOX",
+          "AI CHATBOT",
           style: TextStyle(color: Colors.grey),
         ),
       ),
