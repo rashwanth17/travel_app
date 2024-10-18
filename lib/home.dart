@@ -46,9 +46,14 @@ class HomePage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     itemCount: destination.length,
                     itemBuilder: (context, index) {
-                      return Padding(
-                        padding: EdgeInsets.only(left: index == 0 ? 20 : 0),
-                        child: scroallableImage(context, des[index]),
+                      return GestureDetector(
+                        onTap: () {
+                          Scaffold();
+                        },
+                        child: Padding(
+                          padding: EdgeInsets.only(left: index == 0 ? 20 : 0),
+                          child: scroallableImage(context, des[index]),
+                        ),
                       );
                     },
                   ),
